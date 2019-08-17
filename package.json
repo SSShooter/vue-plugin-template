@@ -1,31 +1,22 @@
 {
-  "name": "name",
-  "description": "description",
+  "name": "vue-plugin-starter",
   "version": "0.0.1",
-  "author": "zhoudejie <ssshooterx@gmail.com>",
-  "keywords": [
-    "vue"
-  ],
-  "license": "MIT",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && cross-env NODE_ENV=vueplugin webpack --progress --hide-modules",
-    "plugin": "cross-env NODE_ENV=vueplugin webpack --progress --hide-modules",
-    "demo": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",

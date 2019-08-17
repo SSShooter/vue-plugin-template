@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div v-my-directive></div>
 </template>
 
 <script>
